@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
 local tool = Instance.new("Tool")
-tool.Name = "MyTool"
+tool.Name = "Dual Ultima Sword"
 tool.RequiresHandle = true
 
 local handle = Instance.new("Part")
