@@ -13,6 +13,8 @@ handle.CanCollide = false
 handle.Transparency = 1
 handle.Parent = tool
 
+tool.Parent = player.Backpack
+
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character 
 PlayerGui=Player.PlayerGui
@@ -1886,5 +1888,3 @@ end
 end
 end
 end
-
-tool.Parent = player.Backpack
