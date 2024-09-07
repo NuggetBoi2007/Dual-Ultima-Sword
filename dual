@@ -7,16 +7,6 @@ handle.Transparency = 1
 handle.CanCollide = false
 handle.Parent = tool
 
-        tool.Unequipped:Connect(function()
-print("skibidi")
-        end)
-    end
-end
-
-tool.Equipped:Connect(onEquipped)
-
-tool.Parent = game.Players.LocalPlayer.Backpack
-
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character 
 PlayerGui=Player.PlayerGui
@@ -1890,3 +1880,9 @@ end
 end
 end
 end
+
+tool.Unequipped:Connect(function()
+
+tool.Equipped:Connect(onEquipped)
+
+tool.Parent = game.Players.LocalPlayer.Backpack
