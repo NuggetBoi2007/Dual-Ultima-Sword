@@ -1,19 +1,21 @@
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-
 local tool = Instance.new("Tool")
-tool.Name = "Dual Ultima Sword"
-tool.RequiresHandle = true
+tool.Name = "Dark Ultima Sword"
 
 local handle = Instance.new("Part")
 handle.Name = "Handle"
-handle.Size = Vector3.new(1, 1, 1)
-handle.Anchored = false
-handle.CanCollide = false
 handle.Transparency = 1
+handle.CanCollide = false
 handle.Parent = tool
 
-tool.Parent = player.Backpack
+        tool.Unequipped:Connect(function()
+print("skibidi")
+        end)
+    end
+end
+
+tool.Equipped:Connect(onEquipped)
+
+tool.Parent = game.Players.LocalPlayer.Backpack
 
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character 
